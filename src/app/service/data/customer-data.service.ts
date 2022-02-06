@@ -13,29 +13,29 @@ export class CustomerDataService {
   }
 
   retrieveAllCustomers(){
-    return this.http.get('http://localhost:8091/jpa/customers/all')
+    return this.http.get('http://localhost:8092/jpa/customers/all')
 
   }
   retrieveCustomersByCountry(country: string){
-    return this.http.get('http://localhost:8091/jpa/customers/country/'+country)
+    return this.http.get('http://localhost:8092/jpa/customers/country/'+country)
 
   }
 
   retrieveCustomersByPhone(phone: string){
-    return this.http.get('http://localhost:8091/jpa/customers/phone/'+phone)
+    return this.http.get('http://localhost:8092/jpa/customers/phone/'+phone)
 
   }
   retrieveCustomersByState(state: string){
-    return this.http.get('http://localhost:8091/jpa/customers/state/'+state)
+    return this.http.get('http://localhost:8092/jpa/customers/state/'+state)
 
   }
   searchCustomer(keyword: string){
-    return this.http.get('http://localhost:8091/jpa/customers/find/'+keyword)
+    return this.http.get('http://localhost:8092/jpa/customers/find/'+keyword)
 
   }
 
   searchCustomersbyCountryandState(keyword: string , state:string){
-    return this.http.get('http://localhost:8091/jpa/customers/find/'+keyword+'/'+state)
+    return this.http.get('http://localhost:8092/jpa/customers/find/'+keyword+'/'+state)
 
   }
 }
